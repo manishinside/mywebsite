@@ -21,7 +21,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.DNS_HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.APP_DIR }}
+          TARGET: ${{ secrets.HOME_DIR }}
 
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
